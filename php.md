@@ -8,7 +8,7 @@
 * Files should be named as `my-file-name` instead of `my_file_name` or `MyFileName`.
 
 
-** Don't use curly brackets in loops, or if statements that only contain one line**
+**Don't use curly brackets in loops, or if statements that only contain one line**
 
 ```php
 <?php
