@@ -22,3 +22,19 @@ foreach ( $messages as $message )
 	echo $message->title;
 
 ```
+
+
+**Use `list() = array()` when declaring multiple variables followed by each other.**
+
+```php
+<?php
+
+// Bad example
+$collection = array();
+$titles = array();
+$time = time();
+
+// Good example
+list( $collection, $titles, $time ) = array( array(), array(), time() );
+
+```
