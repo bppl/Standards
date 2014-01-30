@@ -3,12 +3,17 @@
 ### PHP Syntax
 
 * Use one space after and before `=`.
+* Use one space after and before `{` and `}`
+* Use one space after `(` and before `)`
+* Use soft-tabs with 4 spaces
 * Use `list() = array()` when declaring multiple variables.
-* Group your code by blocks.
+* Group code by blocks.
 * Files should be named as `my-file-name` instead of `my_file_name` or `MyFileName`.
 
 
-**Don't use curly brackets in loops, or if statements that only contain one line**
+### Brackets
+
+Don't use curly brackets in loops, or if statements that only contain one line
 
 ```php
 <?php
@@ -23,8 +28,9 @@ foreach ( $messages as $message )
 
 ```
 
+### Declaration
 
-**Use `list() = array()` when declaring multiple variables followed by each other.**
+Use `list() = array()` when declaring multiple variables followed by each other.
 
 ```php
 <?php
@@ -38,6 +44,25 @@ $time = time();
 list( $collection, $titles, $time ) = array( array(), array(), time() );
 
 ```
+
+When declaring multiple variable with the same value, assign them all at one.
+
+```php
+<?php
+
+// Bad example
+$collection = array();
+$posts = array();
+$news = array();
+
+// Bad example
+list( $collection, $posts, $news ) = array( array(), array(), array() );
+
+// Good example
+$collection = $posts = $news = array();
+
+```
+
 
 ### Function documentation
 
