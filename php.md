@@ -38,3 +38,31 @@ $time = time();
 list( $collection, $titles, $time ) = array( array(), array(), time() );
 
 ```
+
+### Function documentation
+
+When create a function, write a little commentary about what it does, then an example and the the parameters it receive and what it returns.
+
+```php
+<?php
+
+/**
+* Dumps in a pretty format the passed variable.
+*
+* <code>
+*
+*     // Dump a variable
+*     dump( $my_var );
+*
+* </code>
+*
+* @param { mixed } variable to dump
+* @return { void }
+*/
+function dump( $thing ) {
+ 
+    echo '<pre>';
+        var_dump( $thing );
+    echo '</pre>';
+}
+```
