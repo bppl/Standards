@@ -158,3 +158,27 @@ function my_function( $a, $b ) {
 }
 ```
 
+**Short if statements**
+
+Use short if statements when appropriate
+
+```php
+<?php
+
+// Good example
+function my_function( $a, $b ) {
+
+	return $a == 1 ? 'One' : 'Not one';
+}
+
+// Bad example
+function my_function( $a, $b ) {
+	
+	if ( $a == 1 )
+		return 'One';
+		
+	else
+		return 'Not one';
+}
+
+```
