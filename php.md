@@ -1,6 +1,17 @@
-## PHP
+## PHP Styleguide
+Towards a more readable and maintainable code.
 
-### PHP Syntax
+## Table of contents
+
+1. [General](#general)
+2. [Brackets](#brackets)
+3. [Variables](#variables)
+4. [Functions](#functions)
+ 
+
+-------
+
+### General
 
 * Use one space after and before `=`.
 * Use one space after and before `{` and `}`
@@ -28,7 +39,7 @@ foreach ( $messages as $message )
 
 ```
 
-### Declaration
+### Variables
 
 Use `list() = array()` when declaring multiple variables followed by each other.
 
@@ -64,7 +75,9 @@ $collection = $posts = $news = array();
 ```
 
 
-### Function documentation
+### Functions
+
+**Documentation**
 
 When create a function, write a little commentary about what it does, then an example and the the parameters it receive and what it returns.
 
@@ -91,3 +104,57 @@ function dump( $thing ) {
     echo '</pre>';
 }
 ```
+
+**Return values**
+
+When posible, return directly a comparison of the variable.
+
+```php
+<?php
+
+// Good example
+function my_function( $a, $b ) {
+	
+	// Directly return the result of the comparison
+	return $a < $b;
+}
+
+// Bad example
+function my_function( $a, $b ) {
+
+	if ( $a < $b )
+		return true;
+	else 
+		return false;
+
+}
+
+```
+
+Also, when direct comparison cannot be returned, return on the first if and then keep as normal
+
+```php
+<?php
+
+// Good example
+function my_function( $a, $b ) {
+	
+	if ( $a < $b )
+		return 1;
+		
+	return $a * 2;
+
+}
+
+// Bad example
+function my_function( $a, $b ) {
+	
+	if ( $a < $b )
+		return 1;
+		
+	else 
+		return  $a * 2;
+
+}
+```
+
