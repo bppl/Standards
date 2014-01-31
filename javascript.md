@@ -6,6 +6,7 @@ A more readable JavaScript
 
 1. [Object](#objects)
 2. [Arrays](#arrays)
+3. [Naming Conventions]($naming-conventions)
 
 
 ### Objects
@@ -46,5 +47,22 @@ var foo = [
         'red', 'green', 'blue', 'yellow',
         'black', 'white'
 ]
+```
+
+## Naming Conventions
+
+   - Avoid single letter name, be descriptive.
+   
+```js
+
+// Bad example
+function q() {
+  // ...stuff...
+}
+
+// Good example
+function query() {
+  // ..stuff..
+}
 ```
 
