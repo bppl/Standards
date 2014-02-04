@@ -142,7 +142,7 @@ function has_item( $item, $array ) {
 	return in_array( $item, $array );
 }
 
-
+```
 
 Also, when direct comparison cannot be returned, return on the first if and then keep as normal
 
