@@ -14,4 +14,6 @@ $ git checkout -b new-feature
 $ git add .
 $ git commit -m "Commit description. Closes #10"
 $ git push origin new-feature
+
+# Start again...
 ```
