@@ -68,3 +68,7 @@ Such that your markup looks like:
 ### JavaScript generated markup
 
 Writing markup in a javascript file makes the content harder to find, harder to edit, and less performant. Don't do it.
+
+### Lines length
+
+Lines should be ~130 characters at most
