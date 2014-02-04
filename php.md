@@ -131,6 +131,19 @@ function my_function( $a, $b ) {
 
 ```
 
+When posible, return functions that return a boolean, instead of making an if statement.
+
+```php
+<?php
+
+function has_item( $item, $array ) {
+	
+	// Directly return the result of the comparison
+	return in_array( $item, $array );
+}
+
+
+
 Also, when direct comparison cannot be returned, return on the first if and then keep as normal
 
 ```php
