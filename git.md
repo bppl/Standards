@@ -23,6 +23,8 @@ $ git push origin current-branch
 
 ### Case 2: Workflow when creating a new branch.
 
+When you create a new branch, we recommend you create it from `master`, so that it reflects the latest state in the project and can be easily merged.
+
 ```bash
 # Move to master and pull new changes
 $ git checkout master
